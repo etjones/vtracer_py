@@ -1,27 +1,7 @@
 use pyo3::prelude::*;
 use std::path::PathBuf;
-use std::str::FromStr;
 use vtracer::{Config, convert_image_to_svg, ColorMode, Hierarchical };
 use visioncortex::PathSimplifyMode;
-
-#[pyclass]
-enum PyColorMode {
-    Color,
-    Binary
-}
-
-impl FromStr for PyColorMode {
-
-    type Err = ();
-
-    fn from_str(input: &str) -> Result<PyColorMode, Self::Err> {
-        match input {
-            "binary" => Ok(PyColorMode::Binary),
-            "color"  => Ok(PyColorMode::Color),
-            _        => Ok(PyColorMode::Color),
-        }
-    }
-}
 
 #[pyfunction]
 fn convert_image_to_svg_py( image_path: String, 
