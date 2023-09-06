@@ -1,0 +1,1 @@
+from .vtracer_py import convert_image_to_svg_py
