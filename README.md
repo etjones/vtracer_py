@@ -1,4 +1,4 @@
-# VTrace_Py
+# VTracer_Py
 
 [VTracer](https://www.visioncortex.org/vtracer/) is an excellent project from [visioncortex](https://www.visioncortex.org/) that converts binary and color raster images to vector SVGs. It's written in Rust, so this binding aims to make it accessible from Python.
 
