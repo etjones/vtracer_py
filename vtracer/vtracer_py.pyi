@@ -2,9 +2,9 @@ from typing import Optional
 
 def convert_image_to_svg_py(image_path: str, 
                             out_path: str,   
-                            colormode: Optional[str] = None,        # "color" or "binary"
-                            hierarchical: Optional[str] = None,     # "stacked" or "cutout"
-                            mode: Optional[str] = None,             # "polygon", "spline", "none"
+                            colormode: Optional[str] = None,        # ["color"] or "binary"
+                            hierarchical: Optional[str] = None,     # ["stacked"] or "cutout"
+                            mode: Optional[str] = None,             # ["spline"], "polygon", "none"
                             filter_speckle: Optional[int] = None,   # default: 4
                             color_precision: Optional[int] = None,  # default: 6
                             layer_difference: Optional[int] = None, # default: 16
