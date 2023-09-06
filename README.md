@@ -28,7 +28,7 @@ vtracer.convert_image_to_svg_py(inp,
                                 out,
                                 colormode = 'color',        # ["color"] or "binary"
                                 hierarchical = 'stacked',   # ["stacked"] or "cutout"
-                                mode = '',                  # ["spline"]"polygon", "none"
+                                mode = 'spline',            # ["spline"] "polygon", or "none"
                                 filter_speckle = 4,         # default: 4
                                 color_precision = 6,        # default: 6
                                 layer_difference = 16,      # default: 16
